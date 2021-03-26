@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Color Game</string>
+    <string name="game_score">Score: </string>
+    <string name="score_zero">0</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="gray">Gray</string>
+    <string name="ins">How to Play?</string>
+    <string name="ins_desc">TAP THE GREY box at	each second. If	you	miss it, or	you	tap	the colored	box then the Game is over. \n If you don\'t tap any correct figure within 1 second then the game will be over.</string>
+    <string name="ok">OK</string>
+    <string name="over">Game Over</string>
+    <string name="over_desc">Game Over, Your Score is:</string>
+</resources>
