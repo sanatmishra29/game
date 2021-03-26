@@ -64,10 +64,6 @@ public class MainActivity extends AppCompatActivity {
             showGameInstruction();
         }
 
-//        checkIfIdleHandler();
-
-//        afterOneSecond();
-
     }
 
     private void startGame(){
@@ -221,9 +217,6 @@ public class MainActivity extends AppCompatActivity {
           public void run() {
 
               timeRunning = true;
-
-              //Called each time when 1000 milliseconds (1 second) (the period parameter)
-
               Date today = new Date();
               SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.getDefault());
               String newTimeStamp = format.format(today);
@@ -239,8 +232,8 @@ public class MainActivity extends AppCompatActivity {
                       Log.e(TAG, "Parse Exception - "+e.getMessage());
                   }
 
-                  long diff = Objects.requireNonNull(d2).getTime() - Objects.requireNonNull(d1).getTime();//as given
-
+                  long diff = Objects.requireNonNull(d2).getTime() - Objects.requireNonNull(d1).getTime();
+                  
                   long seconds = TimeUnit.MILLISECONDS.toSeconds(diff);
 
                   if (seconds == 2){
@@ -255,11 +248,7 @@ public class MainActivity extends AppCompatActivity {
 
           }
 
-      },
-            //Set how long before to start calling the TimerTask (in milliseconds)
-        500,
-            //Set the amount of time between each execution (in milliseconds)
-        1000);
+      }, 500, 1000);
 
     }
 
